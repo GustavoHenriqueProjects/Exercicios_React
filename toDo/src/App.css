@@ -1,0 +1,130 @@
+body{
+  height: 100vh;
+  font-family: Arial;
+  background-color: aliceblue;
+  padding: 30px;
+  color: white;
+  background-image: url("./img/background.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow-y: scroll;
+}
+
+.app{
+  max-width: 600px;
+  margin: auto;
+  background-color: rgba(64, 64, 64, 0.5);
+  padding: 20px 30px;
+  border-radius: 13px;
+}
+
+h1{
+  text-align: center;
+}
+
+h2{
+  margin-top: 23px;
+}
+
+.todo{
+  padding: 13px;
+  background-color: rgba(51, 51, 51, 0.5);
+  margin: 7px;
+  border-radius: 13px;
+  height: 90px;
+}
+
+.content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.todo-List{
+  max-height: 513px;
+  background-color: rgba(51, 51, 51, 0.5);
+  overflow-y: auto;
+}
+
+p {
+  padding: 10px 0px;
+}
+
+input{
+  box-sizing: border-box;
+}
+
+/* Estilizando o botão */
+button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  color: #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+button:hover{
+  transform: scale(1.1);
+}
+
+.buttonComplete{
+background-color: #579659;
+}
+
+.buttonDeleteTask{
+background-color: #c43629;
+margin-left: 13px;
+}
+
+.buttonCreateTasks{
+  margin-top: 23px;
+  background-color: #579659;
+}
+
+.filter{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 23px;
+}
+
+.container-buttons-filter{
+  display: flex;
+  gap: 13px;
+}
+
+.button-asc{
+  background-color: #3ab686;
+}
+
+.button-desc{
+  background-color: #3ab686;
+}
+
+.todoForm{
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 1.5rem;
+}
+
+input, select{
+  padding: 7px;
+  margin-bottom: 10px;
+  border: 1px solid black;
+  border-radius: 3px;
+  width: 100%;
+}
+
+@media(max-width:1500px){
+  body{
+    overflow-y: auto;
+  }
+}

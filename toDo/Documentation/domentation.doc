@@ -1,0 +1,7 @@
+Comandos: npm create vite@latest
+          select: react
+          npm i
+          npm run dev
+
+          Atalhos do react:
+          Para component -> ES7
