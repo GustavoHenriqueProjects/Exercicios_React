@@ -123,6 +123,21 @@ input, select{
   width: 100%;
 }
 
+.error{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 13px;
+  width: 233px;
+  height: 90px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color:rgba(107, 104, 104, 0.945);
+  border: 2px solid red;
+}
+
 @media(max-width:1500px){
   body{
     overflow-y: auto;

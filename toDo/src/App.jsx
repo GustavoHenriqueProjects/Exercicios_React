@@ -80,7 +80,7 @@ function App() {
               ? todo.isCompleted
               : !todo.isCompleted
           )
-          .filter((todo) => todo.text.toLowerCase().includes(search.toLowerCase()))
+          .filter((todo) => todo.category.toLowerCase().includes(search.toLowerCase()))
           .sort((asc, desc) => sort === "Asc"
            ? asc.text.localeCompare(desc.text)
            : desc.text.localeCompare(asc.text))
